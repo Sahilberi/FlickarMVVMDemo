@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recent View Controller-->
+        <scene sceneID="bfk-4X-w00">
+            <objects>
+                <viewController storyboardIdentifier="RecentViewController" id="bh4-ye-r7h" customClass="RecentViewController" customModule="FlickarMVVMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OAl-6g-jms">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.094117647060000004" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="crW-Bf-ZGP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smw-kI-IsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="167"/>
+        </scene>
+        <!--Data-->
+        <scene sceneID="gLe-yp-cQk">
+            <objects>
+                <viewController storyboardIdentifier="ListingViewController" id="Rws-ge-ZsO" customClass="ListingViewController" customModule="FlickarMVVMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aOX-ac-wvX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xip-uL-qU8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Data" id="DSi-Ll-GEk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKs-ER-g7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="-498"/>
+        </scene>
+        <!--Technologies-->
+        <scene sceneID="ymy-0e-5L3">
+            <objects>
+                <viewController storyboardIdentifier="TechnologyUsedViewController" id="id2-18-654" customClass="TechnologyUsedViewController" customModule="FlickarMVVMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AaJ-Cq-ZNr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jKn-UG-SUM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Technologies" id="RMO-Ay-BiC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0m3-PE-M2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602" y="563"/>
+        </scene>
+    </scenes>
+</document>
