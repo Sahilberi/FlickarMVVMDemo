@@ -19,15 +19,19 @@ class ListingCordinator: Coordinator {
   }
 
   func start() {
+    let viewModel = ListingViewModel()
     let listingViewController : ListingViewController = ListingViewController.instantiate()
+    listingViewController.viewModel = viewModel
     listingViewController.delegate = self
     self.navigationController.viewControllers = [listingViewController]
   }
-
 }
 
 extension ListingCordinator: ListingViewControllerDelegate {
-  func naviagteToNextPage(_ controller: ListingViewController, didTapProduct product: Product) {
+  func naviagteToNextPage(_ controller: ListingViewController, didTapProduct listings: [ListingModel]) {
+    let detailsVC = DetailsTableViewController.instantiate()
+    detailsVC.viewModel = DetailsViewModel(models: listings)
+    self.navigationController.pushViewController(detailsVC, animated: true)
   }
-  
+
 }

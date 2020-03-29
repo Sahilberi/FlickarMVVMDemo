@@ -19,7 +19,8 @@ class RecentImagesCordinator: Coordinator {
   }
 
   func start() {
-    let recentViewController : RecentViewController = RecentViewController.instantiate()
+    let viewModel = PhotosRecentCollectionViewModel()
+    let recentViewController : RecentViewController = RecentViewController(withViewModel: viewModel)
     recentViewController.delegate = self
     self.navigationController.viewControllers = [recentViewController]
   }

@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TechnologyUsedViewController: UIViewController {
+class TechnologyUsedViewController: UIViewController, Storyboarded {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Techologies"
 
   }
 

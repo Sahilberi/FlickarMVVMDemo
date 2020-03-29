@@ -10,9 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
   var window: UIWindow?
-
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -24,34 +22,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = UIWindow(frame: UIScreen.main.bounds)
 
     let nav1 = UINavigationController()
-    let recentCordinator = RecentImagesCordinator(navigationController: UINavigationController())
+    let recentCordinator = RecentImagesCordinator(navigationController: nav1)
     recentCordinator.start()
 
     let nav2 = UINavigationController()
-    let listingCordinator = ListingCordinator(navigationController: UINavigationController())
+    let listingCordinator = ListingCordinator(navigationController: nav2)
     listingCordinator.start()
-
-    //
-//
-//    let first: ViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//    nav1.viewControllers = [first]
-//    nav1.setNavigationBarHidden(true, animated: true)
-//    nav1.title = "first"
-//
-//    let nav2 = UINavigationController()
-//    let second: SecondViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SecondViewController") as! SecondViewController
-//    nav2.viewControllers = [second]
-//    nav2.setNavigationBarHidden(true, animated: true)
-//    nav2.title = "second"
-//
-//    let nav3 = UINavigationController()
-//    let third: ThirdViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ThirdViewController") as! ThirdViewController
-//    nav3.viewControllers = [third]
-//    nav3.setNavigationBarHidden(true, animated: true)
-//    nav3.title = "third"
+    
+    let nav3 = UINavigationController()
+    let techonlogyCordinator = TechonlogyCordinator(navigationController: nav3)
+    techonlogyCordinator.start()
 
     let tabController = UITabBarController()
-    tabController.viewControllers = [nav1, nav2]
+
+    tabController.viewControllers = [nav2, nav1, nav3]
+
+    let item1 = tabController.tabBar.items?[0]
+    item1?.title = "Listing"
+    item1?.image = UIImage(named: "book-cover")
+    item1?.selectedImage = UIImage(named: "book-cover")
+
+    let item2 = tabController.tabBar.items?[1]
+    item2?.title = "Recent"
+    item2?.image = UIImage(named: "RecentEmpty")
+    item2?.selectedImage = UIImage(named: "RecentFilled")
+    
+
+    let item3 = tabController.tabBar.items?[2]
+    item3?.title = "Recent"
+    item3?.image = UIImage(named: "warningIconLight")
+    item3?.selectedImage = UIImage(named: "infoIcon")
+
+    
     tabController.selectedIndex = 0
 
     self.window!.rootViewController = tabController

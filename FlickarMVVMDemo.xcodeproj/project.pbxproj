@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA66A075242BF8660073F7CD /* PhotosCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A074242BF8660073F7CD /* PhotosCollectionViewModel.swift */; };
+		BA66A077242BF89A0073F7CD /* PhotoRecentCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A076242BF89A0073F7CD /* PhotoRecentCollectionViewModel.swift */; };
+		BA66A07A242BF9780073F7CD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A079242BF9780073F7CD /* Photo.swift */; };
+		BA66A088242C00BB0073F7CD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A084242C00BB0073F7CD /* Store.swift */; };
+		BA66A089242C00BB0073F7CD /* PhotosStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A085242C00BB0073F7CD /* PhotosStore.swift */; };
+		BA66A08A242C00BB0073F7CD /* PhotosRecentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A086242C00BB0073F7CD /* PhotosRecentStore.swift */; };
+		BA66A08E242C05000073F7CD /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A08D242C05000073F7CD /* PhotosCollectionViewCell.swift */; };
+		BA66A091242C05C40073F7CD /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A090242C05C40073F7CD /* ApiConstants.swift */; };
+		BA66A093242C065C0073F7CD /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66A092242C065C0073F7CD /* ColorConstants.swift */; };
 		BA96BCB7242A958A00226D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96BCB6242A958A00226D6A /* AppDelegate.swift */; };
 		BA96BCB9242A958A00226D6A /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96BCB8242A958A00226D6A /* ListingViewController.swift */; };
 		BA96BCBC242A958A00226D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA96BCBA242A958A00226D6A /* Main.storyboard */; };
@@ -18,9 +27,28 @@
 		BA96BCD4242A9ABF00226D6A /* RecentImagesCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96BCD3242A9ABF00226D6A /* RecentImagesCordinator.swift */; };
 		BA96BCD7242A9B7A00226D6A /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96BCD6242A9B7A00226D6A /* Storyboard+Extension.swift */; };
 		BA96BCDA242AA77E00226D6A /* ListingCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96BCD9242AA77E00226D6A /* ListingCordinator.swift */; };
+		BAFF952B242FF2CC00FD08CC /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF952A242FF2CC00FD08CC /* ListingViewModel.swift */; };
+		BAFF952D242FF5DA00FD08CC /* ListingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF952C242FF5DA00FD08CC /* ListingStore.swift */; };
+		BAFF952F2430A55000FD08CC /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF952E2430A55000FD08CC /* ListingModel.swift */; };
+		BAFF95312430BF8100FD08CC /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF95302430BF8100FD08CC /* DetailsTableViewController.swift */; };
+		BAFF95332430C12600FD08CC /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF95322430C12600FD08CC /* DetailsViewModel.swift */; };
+		BAFF95352430C89C00FD08CC /* TechonlogyCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF95342430C89C00FD08CC /* TechonlogyCordinator.swift */; };
+		E62F0C3AFF95549631326815 /* Pods_FlickarMVVMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51998A17E321CF2E9705004C /* Pods_FlickarMVVMDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D11F4E612A9A7C6D1FB5A6 /* Pods-FlickarMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickarMVVMDemo.release.xcconfig"; path = "Target Support Files/Pods-FlickarMVVMDemo/Pods-FlickarMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		51998A17E321CF2E9705004C /* Pods_FlickarMVVMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickarMVVMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55EFF46DACFC3C75EB859815 /* Pods-FlickarMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickarMVVMDemo.debug.xcconfig"; path = "Target Support Files/Pods-FlickarMVVMDemo/Pods-FlickarMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BA66A074242BF8660073F7CD /* PhotosCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewModel.swift; sourceTree = "<group>"; };
+		BA66A076242BF89A0073F7CD /* PhotoRecentCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRecentCollectionViewModel.swift; sourceTree = "<group>"; };
+		BA66A079242BF9780073F7CD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		BA66A084242C00BB0073F7CD /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BA66A085242C00BB0073F7CD /* PhotosStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosStore.swift; sourceTree = "<group>"; };
+		BA66A086242C00BB0073F7CD /* PhotosRecentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosRecentStore.swift; sourceTree = "<group>"; };
+		BA66A08D242C05000073F7CD /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA66A090242C05C40073F7CD /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		BA66A092242C065C0073F7CD /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		BA96BCB3242A958A00226D6A /* FlickarMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickarMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA96BCB6242A958A00226D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA96BCB8242A958A00226D6A /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +62,12 @@
 		BA96BCD3242A9ABF00226D6A /* RecentImagesCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentImagesCordinator.swift; sourceTree = "<group>"; };
 		BA96BCD6242A9B7A00226D6A /* Storyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
 		BA96BCD9242AA77E00226D6A /* ListingCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCordinator.swift; sourceTree = "<group>"; };
+		BAFF952A242FF2CC00FD08CC /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
+		BAFF952C242FF5DA00FD08CC /* ListingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStore.swift; sourceTree = "<group>"; };
+		BAFF952E2430A55000FD08CC /* ListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModel.swift; sourceTree = "<group>"; };
+		BAFF95302430BF8100FD08CC /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		BAFF95322430C12600FD08CC /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		BAFF95342430C89C00FD08CC /* TechonlogyCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechonlogyCordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +75,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62F0C3AFF95549631326815 /* Pods_FlickarMVVMDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F6B92494A333B32946BD744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51998A17E321CF2E9705004C /* Pods_FlickarMVVMDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BE2E195EB7F6E3079CD85BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EFF46DACFC3C75EB859815 /* Pods-FlickarMVVMDemo.debug.xcconfig */,
+				30D11F4E612A9A7C6D1FB5A6 /* Pods-FlickarMVVMDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA66A073242BF7DB0073F7CD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA66A074242BF8660073F7CD /* PhotosCollectionViewModel.swift */,
+				BA66A076242BF89A0073F7CD /* PhotoRecentCollectionViewModel.swift */,
+				BAFF952A242FF2CC00FD08CC /* ListingViewModel.swift */,
+				BAFF95322430C12600FD08CC /* DetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA66A078242BF8B40073F7CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA66A079242BF9780073F7CD /* Photo.swift */,
+				BAFF952E2430A55000FD08CC /* ListingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA66A07B242BFD700073F7CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA66A086242C00BB0073F7CD /* PhotosRecentStore.swift */,
+				BA66A085242C00BB0073F7CD /* PhotosStore.swift */,
+				BA66A084242C00BB0073F7CD /* Store.swift */,
+				BAFF952C242FF5DA00FD08CC /* ListingStore.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BA66A08C242C04F30073F7CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA66A08D242C05000073F7CD /* PhotosCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA66A08F242C05990073F7CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA66A092242C065C0073F7CD /* ColorConstants.swift */,
+				BA66A090242C05C40073F7CD /* ApiConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BA96BCAA242A958A00226D6A = {
 			isa = PBXGroup;
 			children = (
 				BA96BCB5242A958A00226D6A /* FlickarMVVMDemo */,
 				BA96BCB4242A958A00226D6A /* Products */,
+				8BE2E195EB7F6E3079CD85BF /* Pods */,
+				0F6B92494A333B32946BD744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,7 +168,6 @@
 		BA96BCB5242A958A00226D6A /* FlickarMVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				BA96BCD0242A9A6E00226D6A /* Cordinators */,
 				BA96BCC8242A978000226D6A /* AppDelegate */,
 				BA96BCCB242A983C00226D6A /* Sources */,
 				BA96BCCA242A981C00226D6A /* Storyboard */,
@@ -104,6 +205,12 @@
 		BA96BCCB242A983C00226D6A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BA66A08F242C05990073F7CD /* Helpers */,
+				BA66A07B242BFD700073F7CD /* Network */,
+				BA96BCD0242A9A6E00226D6A /* Cordinators */,
+				BA66A078242BF8B40073F7CD /* Models */,
+				BA66A073242BF7DB0073F7CD /* ViewModels */,
+				BA66A08C242C04F30073F7CD /* Views */,
 				BA96BCD8242AA38A00226D6A /* ViewControllers */,
 				BA96BCD5242A9B2900226D6A /* Extensions */,
 			);
@@ -116,6 +223,7 @@
 				BA96BCD1242A9A8100226D6A /* Cordinator.swift */,
 				BA96BCD3242A9ABF00226D6A /* RecentImagesCordinator.swift */,
 				BA96BCD9242AA77E00226D6A /* ListingCordinator.swift */,
+				BAFF95342430C89C00FD08CC /* TechonlogyCordinator.swift */,
 			);
 			path = Cordinators;
 			sourceTree = "<group>";
@@ -134,6 +242,7 @@
 				BA96BCB8242A958A00226D6A /* ListingViewController.swift */,
 				BA96BCCC242A98C200226D6A /* RecentViewController.swift */,
 				BA96BCCE242A98E600226D6A /* TechnologyUsedViewController.swift */,
+				BAFF95302430BF8100FD08CC /* DetailsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA96BCC5242A958D00226D6A /* Build configuration list for PBXNativeTarget "FlickarMVVMDemo" */;
 			buildPhases = (
+				56B8ACDBB790CAC46F91FA86 /* [CP] Check Pods Manifest.lock */,
 				BA96BCAF242A958A00226D6A /* Sources */,
 				BA96BCB0242A958A00226D6A /* Frameworks */,
 				BA96BCB1242A958A00226D6A /* Resources */,
+				8463A1A48A57DE02708ED39A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,19 +315,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56B8ACDBB790CAC46F91FA86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickarMVVMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8463A1A48A57DE02708ED39A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickarMVVMDemo/Pods-FlickarMVVMDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickarMVVMDemo/Pods-FlickarMVVMDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickarMVVMDemo/Pods-FlickarMVVMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA96BCAF242A958A00226D6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFF95352430C89C00FD08CC /* TechonlogyCordinator.swift in Sources */,
 				BA96BCCD242A98C200226D6A /* RecentViewController.swift in Sources */,
 				BA96BCD4242A9ABF00226D6A /* RecentImagesCordinator.swift in Sources */,
+				BA66A093242C065C0073F7CD /* ColorConstants.swift in Sources */,
+				BA66A077242BF89A0073F7CD /* PhotoRecentCollectionViewModel.swift in Sources */,
+				BAFF952F2430A55000FD08CC /* ListingModel.swift in Sources */,
+				BA66A088242C00BB0073F7CD /* Store.swift in Sources */,
+				BAFF952B242FF2CC00FD08CC /* ListingViewModel.swift in Sources */,
+				BAFF95332430C12600FD08CC /* DetailsViewModel.swift in Sources */,
+				BA66A091242C05C40073F7CD /* ApiConstants.swift in Sources */,
 				BA96BCD2242A9A8100226D6A /* Cordinator.swift in Sources */,
 				BA96BCD7242A9B7A00226D6A /* Storyboard+Extension.swift in Sources */,
 				BA96BCCF242A98E600226D6A /* TechnologyUsedViewController.swift in Sources */,
 				BA96BCDA242AA77E00226D6A /* ListingCordinator.swift in Sources */,
+				BA66A07A242BF9780073F7CD /* Photo.swift in Sources */,
+				BA66A08A242C00BB0073F7CD /* PhotosRecentStore.swift in Sources */,
+				BA66A075242BF8660073F7CD /* PhotosCollectionViewModel.swift in Sources */,
+				BAFF952D242FF5DA00FD08CC /* ListingStore.swift in Sources */,
+				BA66A08E242C05000073F7CD /* PhotosCollectionViewCell.swift in Sources */,
 				BA96BCB9242A958A00226D6A /* ListingViewController.swift in Sources */,
 				BA96BCB7242A958A00226D6A /* AppDelegate.swift in Sources */,
+				BAFF95312430BF8100FD08CC /* DetailsTableViewController.swift in Sources */,
+				BA66A089242C00BB0073F7CD /* PhotosStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +528,7 @@
 		};
 		BA96BCC6242A958D00226D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EFF46DACFC3C75EB859815 /* Pods-FlickarMVVMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +546,7 @@
 		};
 		BA96BCC7242A958D00226D6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D11F4E612A9A7C6D1FB5A6 /* Pods-FlickarMVVMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
